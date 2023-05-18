@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap"/>
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+      #header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+       
+        border-bottom: 1px solid black;
+      }
+  
+      .header-info {
+        display: flex;
+        align-items: center;
+      }
+  
+      .header-info img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+      }
+  
+      .header-info p {
+        margin: 0;
+      }
+  
+      .vertical-line {
+        border-left: 1px solid black;
+        height: 30px;
+        margin: 0 30px;
+      }
+  
+      .header-icons {
+        display: flex;
+        align-items: center;
+      }
+  
+      .header-icons img {
+        width: 20px;
+        height: 20px;
+        margin-right: 50px;
+      }
+  
+      @media (max-width: 768px) {
+        #header {
+          display: none;
+        }
+      }
+      .bo{
+        background: url("./images/background_image.png") no-repeat center center fixed;
+        background-size: 100% 100%;
+        width: 100vw;
+        height: 120vb;
+      }
+
+      
+        .box {
+          /*max-width: 1200px;
+          width: 100%;
+          height: 500px;*/
+          background-color: rgba(255, 255, 255, 0.8);
+          border-radius:2ex;
+          padding: 20px;
+          position: relative;
+          margin: 20px;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          top:px;
+        }
+        .corner-img{
+          display: flex;
+          align-items: center;
+          width:420px;
+          margin-right: 60px;
+      }
+      .corner-img img {
+        margin-left: 50px;
+      }
+      .corner-img1{
+        display: flex;
+        align-items: center;
+        width:420px;
+        margin-right: 60px;
+    }
+    .corner-img1 img {
+      
+      height:120px;
+       width:120px;
+    }
+    .corner-img1 p {
+      font-size:15px;
+      font-weight:400;
+      margin-left: 10px;
+     
+
+    }
+    .contact-details {
+      display: flex;
+      align-items: center;
+      width:420px;
+      margin-right: 80px;
+    }
+    .contact-details h5 {
+      margin-left: 20px;
+    }
+    .contact-details img{
+      height:50x; 
+      width:50px;
+    }
+    .contact-container img {
+      width:350px;
+      height:350px; 
+      float: right;
+     }
+        
+        
+     @media only screen and (max-width: 768px) {
+      .bo {
+        background-size: cover;
+        height: auto;
+        min-height: 130vh;
+      }
+     #map{
+      max-width: 375;
+      max-height: 375;
+     }
+     .up{
+      position: relative;
+      top:-40px;
+     }
+      .text-wrap{
+        word-wrap: break-word;
+      }
+    
+      .box {
+        width: auto;
+        margin: 20px auto;
+        padding: 3px;
+        text-align: center;
+        min-height: 95vh;
+      }
+    
+      .corner-img img{
+        height: 5px;
+        width: 5px;
+    }
+
+    .corner-img {
+        width: 100%;
+        margin-right:0px;
+      }
+     
+      .corner-img1 {
+        width: 100%;
+        margin-right: 0;
+      }
+      .corner-img img{
+        margin-left: auto;
+        width: 300;
+        height: auto;
+      }
+    
+      
+      .corner-img1 img {
+        margin-left: 0;
+        width: 300;
+        height: auto;
+      }
+    
+      .corner-img1 p {
+        font-size: 12px;
+        font-weight: 750;
+        text-align: left;
+        margin-left: 10px;
+      }
+    
+      .contact-details {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+      }
+    
+      .contact-details h5 {
+        margin-left: 0;
+        margin-left:20px;
+        font-size:15px;
+      }
+    
+      .contact-details img {
+        height: 40px;
+        width: 40px;
+      }
+    
+      
+    
+      .contact-container img {
+        width: 300px;
+        height: 200px;
+        float: none;
+      }
+    }
+   
+    .hover:hover{
+      color: rgba(209, 10, 10, 0.852) !important;
+    }
+    .contact:hover{
+      color: rgba(209, 10, 10, 0.852) !important;
+    }
+    #map {
+      height: 100%;
+      overflow: scroll;
+      margin-bottom: 100px;
+       height:370px; overflow:hidden;
+    }
+    
+        
+    </style>
+  </head>
+  <body>
+    <div class="bo">
+    <header id="header">
+      <div class="header-info">
+        <img src="./images/phone.png" alt="Phone">
+        <p class="contact">91 730 506 5008</p>
+        <div class="vertical-line"></div>
+        <img src="./images/message.png" alt="Email">
+        <p class="contact">care@jbrosinfras.com</p>
+        <div class="vertical-line"></div>
+        <img src="./images/whatsapp.png" alt="Image 3">
+        <p class="contact">91 730 506 5008</p>
+      </div>
+      <div class="header-icons">
+        <img src="./images/facebook.png" alt="Image 1 " class="icons">
+        <img src="./images/twitter.png" alt="Image 2"class="icons">
+       
+        <img src="./images/instagram.png" alt="Image 4"class="icons">
+        <img src="./images/linkedin.png" alt="Image 5"class="icons">
+      </div>
+    </header>
+    
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./images/icon.png" alt="" width="120px" height="120px" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html"><b  class="hover"style="color:black">Home</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"><b  class="hover"style="color:black">About us</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ourproduct.html"><b class="hover" style="color:black">Our Product</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ourservice.html"><b  class="hover"style="color:black">Our Services</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"><b  class="hover"style="color:rgba(209, 10, 10, 0.852)">Contact Us</b></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container" >
+      <div class="box">
+        <h2 class="text-center">
+          <b> <span style="color: red;">Contact</span> Us</b>
+        </h2>
+        <div class="row ">
+          <div class="col-md-6 order-md-2 col-12"class="map" >
+            <div id="map"   ></div>
+          </div>
+          <div class="col-md-6 order-md-1 col-12 up" style="margin-top: 0px;">
+          <div  style="text-align:left">
+              <div class="contact-details">
+                <img src="./images/contact_us_phone.jpg"alt=""><h5>+91 730 506 5008</h5>
+              <br>
+            </div>
+            <br>
+              <div class="contact-details">
+                <img src="./images/contact_us_mail.jpg"alt=""><h5>care@jbrosinfras.com </h5>
+              </div>
+              <br>
+              <div class="corner-img1"style="width:400px; height:200px;text-align:left">
+                <img src="./images/qr.jpg"alt=""> <p class="text-wrap"> GET IN TOUCH <br>JBROS INFRAS <br>S.F.No 377/1D, 377/1C2C,<br>Kunnathur village,Annur taluk,<br>Kunnathurpudhur, Coimbatore,<br> Tamil Nadu, 641107</p>
+              </div>
+              <div class="corner-img">
+                <img src="./images/facebook.png" style="width: 25px; height:30px;"alt="Image 1">
+                <img src="./images/twitter.png" style="width: 40px; height:30px;"alt="Image 2">
+                <img src="./images/whatsapp.png" style="width: 25px; height:30px;"alt="Image 3">
+                <img src="./images/instagram.png" style="width: 25px; height:30px;"alt="Image 4">
+                <img src="./images/linkedin.png"style="width: 25px; height:30px;" alt="Image 5">
+            </div>
+          </div>
+         
+        </div>  
+        
+    </div>
+  </div>
+</div>
+    
+<script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+  ({key: "AIzaSyDWLrCAzUMH6BXPVc7P1Iu5_MpMGiMViHY", v: "beta"});</script>
+<script src="./map.js"></script> 
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

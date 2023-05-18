@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+      #header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: #f5f5f5;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .header-info {
+        display: flex;
+        align-items: center;
+      }
+
+      .header-info img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+      }
+
+      .header-info p {
+        margin: 0;
+      }
+
+      .vertical-line {
+        border-left: 1px solid black;
+        height: 30px;
+        margin: 0 30px;
+      }
+
+      .header-icons {
+        display: flex;
+        align-items: center;
+      }
+
+      .header-icons img {
+        width: 20px;
+        height: 20px;
+        margin-right: 50px;
+      }
+
+      @media (min-width: 320) and (max-width: 480){
+        #header {
+          display: none;
+        }
+        .side-image{
+          width: 75px;
+          height: 75px;
+         }
+         p{
+          font-size:  16px;
+         }
+         #center{
+          text-align: center;
+          font-size: 16px;
+          margin-bottom: 10px;
+         }
+      }
+     
+      .bo {
+        background: url("./images/background_image.png") no-repeat center center
+          fixed;
+        background-size: 100% 100%;
+        width: 100vw;
+        height: 120vb;
+      }
+
+      .box {
+        max-width: 1200px;
+        width: 100%;
+        min-height: 500px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        border-radius: 1em;
+        padding: 20px;
+
+        margin: 0 auto;
+        
+      }
+   
+
+      @media (max-width: 800px) {
+        .box {
+          width: auto;
+          min-height: 500px;
+          padding: 10px;
+          background-color: rgba(255, 255, 255, 0.8);
+          border: 1px solid rgba(255, 255, 255, 0.8);
+          border-radius: 1em;
+        }
+        #header {
+          display: none;
+        }
+        img{
+          width: 100px;
+          height: 100px;
+        }
+       
+      }
+      .hover:hover{
+        color: rgba(209, 10, 10, 0.852) !important;
+      }
+      .contact:hover{
+        color: rgba(209, 10, 10, 0.852) !important;
+      }
+     p{
+      font-size: 18px;
+     }
+     .side-image{
+      width: 100px;
+      height: 100px;
+     }
+     #center{
+      text-align: center;
+     }
+    </style>
+  </head>
+  <body>
+    <div class="bo">
+      <header id="header">
+        <div class="header-info">
+          <img src="./images/phone.png" alt="Phone" />
+          <p class="contact">91 730 506 5008</p>
+          <div class="vertical-line"></div>
+          <img src="./images/message.png" alt="Email" />
+          <p class="contact">care@jbrosinfras.com</p>
+          <div class="vertical-line"></div>
+          <img src="./images/whatsapp.png" alt="Image 3" />
+          <p class="contact">91 730 506 5008</p>
+        </div>
+        <div class="header-icons">
+          <img src="./images/facebook.png" alt="Image 1" />
+          <img src="./images/twitter.png" alt="Image 2" />
+
+          <img src="./images/instagram.png" alt="Image 4" />
+          <img src="./images/linkedin.png" alt="Image 5" />
+        </div>
+      </header>
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./images/icon.png"
+              alt=""
+              width="120px"
+              height="120px"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="home.html"
+                  ><b  class="hover"style="color: black">Home</b></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"
+                  ><b  class="hover"style="color: black">About Us</b></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ourproduct.html"
+                  ><b  class="hover"style="color: black">Our Product</b></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ourservice.html"
+                  ><b  class="hover"style="color: rgba(209, 10, 10, 0.852)"
+                    >Our Services</b
+                  ></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html"
+                  ><b  class="hover"style="color: black">Contact us</b></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="box">
+        <div id="center">
+          <b style="font-size: 35px;width:100%" 
+            ><span style="color: rgba(209, 10, 10, 0.852)">Our </span>Services</b
+          >
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 order-sm-2 order-2 order-md-1">
+              <div class="row">
+                <div class="col-lg-6 col-6 "><a href="interior.html"
+                  ><img class="img1" src="./images/interior.png" alt=""
+                /></a></div>
+                <div class="col-lg-6 col-6"> <a href="construction.html"
+                  ><img class="img1" src="./images/construction.png" alt=""
+                /></a></div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-6" ><a href="techinical.html"
+                  ><img class="img1" src="./images/techinical.png" alt=""
+                /></a></div>
+                <div class="col-lg-6 col-6"><a href="industry.html"
+                  ><img class="img1" src="./images/industry.png" alt=""
+                /></a></div>
+              </div>
+            </div>
+            <div class="col-lg-6 order-sm-1 order-1 order-md-2">
+              <div class="row">
+                <div class="col-lg-6"><b style="font-size: 30px; color: rgba(209, 10, 10, 0.852)"
+                  >Architecture</b></div>
+              
+              </div>
+              <div class="row d-flex justify-content-center align-items-start">
+                <div class="col-3 order-1 "><img class="side-image"
+                  src="./images/red_architecture.jpg"
+                  style=" float: right"
+                  alt=""
+              /></div>
+                <div class="col-9 order-0 "> <div class="d-flex justify-content-center"><p style="text-align: justify;">
+                  Our team of young, creative, and experienced architects can
+                  transform your vision into reality through our design services.
+                  We are committed to creating spatial experiences that seamlessly
+                  blend geometry and nature in our design and development
+                  processes.</div> 
+                </p></div>
+              </div>
+            </div>
+            
+           
+            
+            
+          </div>
+          <td style="width: 200px"></td>
+          <td class="data1">
+            <span
+              >
+              <br />
+              <br />
+            
+            </span>
+          </td>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
